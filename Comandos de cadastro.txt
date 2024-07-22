@@ -1,0 +1,29 @@
+Comandos de cadastro
+git config --global --list
+git config --global user.name "RaphaelCarvalh"
+git config --global user.email "raphaelmdecarvalho@gmail.com"
+
+Comandos de SSH
+No gitbash
+ssh-keygen -t ed25519 -C "raphaelmdecarvalho@gmail.com" -f C:/Users/rapha/.ssh/id_ed25519
+
+Escolha a senha ou deixe vazio.
+
+No powershell executado na pasta .ssh   
+type C:\Users\rapha\.ssh\id_ed25519.pub
+
+Copiar o Código ss-ed…..    Ir para a página no github.
+
+No bash novamente execute
+ ssh -T git@github.com
+Você verá;    Are you sure you want to continue connecting (yes/no/[fingerprint])? Yes (primeira vez
+
+
+
+Conectando ao repositório
+git init
+echo "# teste SSh" > readme.md
+git add README.md
+git commit -m "Initial commit"
+git remote add origin git@github.com:RaphaelCarvalh/teste-ssh.git
+git push -u origin master
